@@ -14,7 +14,7 @@ RUN apt-get update \
 
 # ref: https://texwiki.texjp.org/?Linux#texliveinstall
 WORKDIR /tmp
-RUN wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz --no-check-certificate \
+RUN wget http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz --no-check-certificate \
     && tar xvf install-tl-unx.tar.gz \
     && cd install-tl* \
     && printf "%s\n" \
